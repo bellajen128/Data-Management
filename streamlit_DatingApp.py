@@ -10,7 +10,7 @@ from wordcloud import WordCloud, STOPWORDS
 db_config = {
     'host':     'localhost',
     'user':     'root',
-    'password': '94bp65p94',
+    'password': '<user password>',
     'database': 'DatingApp'
 }
 
