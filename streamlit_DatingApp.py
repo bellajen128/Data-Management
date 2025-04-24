@@ -7,12 +7,20 @@ import altair as alt
 from wordcloud import WordCloud, STOPWORDS
 
 # Database configuration
+# db_config = {
+#     'host':     'localhost',
+#     'user':     'root',
+#     'password': '',
+#     'database': 'DatingApp'
+# }
+
 db_config = {
-    'host':     'localhost',
-    'user':     'root',
-    'password': '94bp65p94',
-    'database': 'DatingApp'
+    'host':     st.secrets["db"]["host"],
+    'user':     st.secrets["db"]["user"],
+    'password': st.secrets["db"]["password"],
+    'database': st.secrets["db"]["database"]
 }
+
 
 @st.cache_data
 def load_data():
